@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: Qatar2022Arabic;
+    src: url('./assets/font/Qatar2022Arabic-Bold.ttf');
+}
+
+html, body { 
+    height: 100%; 
+}
+body { 
+    margin: 0;
+    font-family: Qatar2022Arabic;
+}

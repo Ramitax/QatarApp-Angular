@@ -1,0 +1,114 @@
+.example-list {
+  width: 500px;
+  max-width: 100%;
+  border: solid 1px #ccc;
+  min-height: 60px;
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: move;
+  background: #EEEEE4;
+  text-align: center;
+  color: #691127;
+  font-size: 30px;
+  font-family: Qatar2022Arabic;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+#groups {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-image: url(../../../assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#group {
+  width: 20%;
+  height: 50%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#list {
+  max-width: 100%;
+  display: block;
+  border-radius: 11px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#title {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: move;
+  background: #EEEEE4;
+  color: #691127;
+  font-size: 30px;
+  cursor: default;
+}
+
+#team {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: #691127;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: move;
+  font-size: 30px;
+}

@@ -1,0 +1,8 @@
+<div id="groups">
+  <div id="group" *ngFor="let group of groups; let i = index">
+    <div cdkDropList id="list" class="example-list" (cdkDropListDropped)="drop($event, group.teams, i)">
+      <div id="title" class="example-box">{{group.title}}</div>
+      <div id="team" class="example-box" *ngFor="let team of group.teams" cdkDrag>{{team}}</div>
+    </div>
+  </div>
+</div>

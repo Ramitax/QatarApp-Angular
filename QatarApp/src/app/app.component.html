@@ -1,0 +1,4 @@
+<app-group *ngIf="activeGroup"></app-group>
+<button (click)="filterGroup( ); activeGroup = false; activeFinal = true;" *ngIf="activeGroup">Fase final</button>
+
+<app-playoffs *ngIf="activeFinal"></app-playoffs>

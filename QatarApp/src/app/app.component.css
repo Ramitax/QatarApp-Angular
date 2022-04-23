@@ -1,0 +1,12 @@
+button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 7%;
+    height: 5%;
+    background-color: #EEEEE4;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: Qatar2022Arabic;
+    color: #691127;
+}
